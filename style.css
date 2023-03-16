@@ -174,18 +174,18 @@ div.about{
 div.about .seven{
     width: 900px;
     margin: 100px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
 
-div.about .three p{
+div.about .three p {
     display: flex;
     height: 100%;
     justify-content: center;
     align-items: center;
-    margin: 50px;
-}
+    margin: 118px;
+  }
 
 
 
