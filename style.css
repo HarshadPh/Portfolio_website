@@ -18,7 +18,7 @@ body
 }
 header
 {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -27,6 +27,8 @@ header
     justify-content: space-between;
     align-items: center;
     z-index:  1000000;
+    background: transparent;
+    backdrop-filter: blur(10px);
 }
 
 header .logo
@@ -161,12 +163,13 @@ section .myself{
 
 
 div.about{
-    height: 70vh;
+    height: fit-content;
     width: 95%;
     background-color: #ffffff89;
     margin: 50px;
     border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -200,6 +203,7 @@ div.skil{
 }
 div.skills{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 50px;
     
@@ -280,17 +284,21 @@ span {
 
 /* projects */
 .projects{
-    height: 70vh;
+    
+    grid-template-columns: repeat(2,1fr);
+    height: fit-content;
     width: 95%;
     background-color: #ffffff89;
     margin: 50px;
     border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .project {
-    width: 300px; height: 100px;
+    flex: 1 1 300px;
+    width: 300px; height: 300px;
     perspective: 800px;
     margin: 20px;
     background-color: #fff;
